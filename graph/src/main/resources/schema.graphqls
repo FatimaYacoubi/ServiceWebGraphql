@@ -1,0 +1,12 @@
+type Student {
+cin: String!
+nompre: String!
+email: String!
+}
+type Query{
+allStudents: [Student]
+Students(cin: String!): Student
+}
+schema {
+query:Query
+}
